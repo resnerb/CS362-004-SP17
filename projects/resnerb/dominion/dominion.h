@@ -136,5 +136,16 @@ int playVillage(struct gameState *state, int handPos);
 int playFeast(struct gameState *state, int choice1);
 int playCouncil_Room(struct gameState *state, int handPos);
 
+/*
+  ** My implemented cards.
+  ** Kevin Turkington
+*/
+int adventurer_CARD(struct gameState *state,int currentPlayer,int temphand[],int cardDrawn,int *drawntreasure);
+int smithy_CARD(struct gameState *state,int currentPlayer,int handPos);
+int steward_CARD(struct gameState *state,int currentPlayer,int handPos,int choice1,int choice2,int choice3);
+int outpost_CARD(struct gameState *state,int currentPlayer,int handPos);
+int cutpurse_CARD(struct gameState *state,int currentPlayer,int handPos);
+
+
 
 #endif
